@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction to Javascript</title>
+
+	<style>
+		div {
+			height: 500px;
+			width: 500px;
+			margin: auto;
+			border-radius: 500px;
+			background-color: green;
+		}
+
+		h1 {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Javascript in HTML</h1>
+	<div id="Kez" onclick="differentColor()"></div>
+
+	<script>
+
+		function differentColor() {
+			var colors = ["yellow", "red", "orange", "cyan", "green", "blue", "purple", "pink", "brown", "gray", "black"];
+			var randomColor = colors[Math.floor(Math.random() * colors.length)];
+			document.getElementById("Kez").style.backgroundColor = randomColor;
+		}
+
+	</script>
+</body>
+
+</html>
